@@ -1,0 +1,34 @@
+html, body, .root{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* https://coolors.co/0892a5-ffba49-0ca4a5-dbb68f-bb7e5d */
+.root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #0CA4A5;
+}
+
+.logo{
+    text-align: center;
+    font-size: 2rem;
+    color: #064B4B;
+    width: 100%;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.links a{
+    color: #097879;
+    text-decoration: none;
+}
