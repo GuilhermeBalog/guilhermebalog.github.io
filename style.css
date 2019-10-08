@@ -16,8 +16,7 @@ html, body, .root{
 
 .logo{
     text-align: center;
-    font-size: 2rem;
-    color: #064B4B;
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
 }
 
@@ -29,6 +28,7 @@ html, body, .root{
 }
 
 .links a{
-    color: #097879;
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    font-size: 1.3rem;
 }
