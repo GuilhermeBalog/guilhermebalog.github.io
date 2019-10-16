@@ -20,14 +20,14 @@ html, body, .root{
     width: 100%;
 }
 
-.links{
+#links{
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.links a{
+#links a{
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     font-size: 1.3rem;
