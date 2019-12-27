@@ -23,17 +23,45 @@
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
         <div class="root">
-            <div class="center">
-                <div class="logo">
+            <header>
+                <img src="img/perfil.png">
+                <div class="title">
                     <h1>Guilherme Balog Gardino</h1>
+                    <h2>Software Developer</h2>
                 </div>
-                <div id="links"></div>
-            </div>
+            </header>
+            <section>
+                <h3>About me</h3>
+                <p>Hello! My name is <strong>Guilherme Balog Gardino</strong> and I am a software developer based in Brazil</p>
+            </section>
+            <section>
+                <h3>Projects</h3>
+                <p>There are some projects that I developed </p>
+                <div class="projects">
+                    <div class="project-card">
+                        <h4><a href="https://guilhermebalog.github.io/js-music-keyboard" target="_blank" rel="noreferer">Music Keyboard</a></h4>
+                        <p class="project-description">A simple keyboard made in with the Tone.js framework</p>
+                        <p class="project-language">JavaScript, HTML, CSS</p>
+                    </div>
+                    <div class="project-card">
+                        <h4><a href="https://guilhermebalog.github.io/TodoList" target="_blank" rel="noreferer">To Do List</a></h4>
+                        <p class="project-description">A simple To-do list creator, made with Javascript</p>
+                        <p class="project-language">JavaScript, HTML, CSS</p>
+                    </div>
+                    <div class="project-card">
+                        <h4><a href="https://guilhermebalog.github.io/my-hello-worlds" target="_blank" rel="noreferer">Hello Worlds</a></h4>
+                        <p class="project-description">This is a web page with all languages that I know</p>
+                        <p class="project-language">JavaScript, HTML, CSS</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <script src="main.js"></script>  
+        <!-- <script src="main.js"></script>   -->
     </body>
 </html>
