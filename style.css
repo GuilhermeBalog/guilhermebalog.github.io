@@ -78,32 +78,36 @@ section h3{
 }
 
 .projects{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2em;
 }
 
 .project-card{
     border-radius: 25px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
-    padding: 1em 1.5em;
     background-color: #ffffff;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-    display: inline-block;
+}
+
+.project-image{
     width: 100%;
+    border-radius: 25px 25px 0 0 ;
 }
 
 .project-card h4{
     font-family: 'Roboto', sans-serif;
     font-size: 1.563em;
     font-weight: bold;
-    margin: 0;
-    margin-bottom: 1em;
+    margin: 0.5em 0.5em 1em 0.5em;
 }
 
-.project-card h4 a{
+.project-card a{
     color: #000000;
+}
+
+.project-card p{
+    margin: 0.5em 0.5em 1em 0.7em;
 }
 
 .project-description{
@@ -117,6 +121,16 @@ section h3{
     font-weight: 100; /* thin */
 }
 
+.project-repo{
+    display: flex;
+    align-items: center;
+}
+
+.project-repo img{
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
 @media (min-width: 600px){
     header{
         justify-content: flex-start;
@@ -125,13 +139,13 @@ section h3{
     header h1, header h2{
         text-align: left;
     }
-    .project-card{
-        width: 49%;
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 900px){
-    .project-card{
-        width: 32%;
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
