@@ -9,7 +9,10 @@ html, body, .root{
     font-weight: 300; /* light */
     
 }
-/* https://coolors.co/0892a5-ffba49-0ca4a5-dbb68f-bb7e5d */
+body{
+    background-color: #f9f9f9;
+}
+
 .root{
     display: flex;
     flex-direction: column;
@@ -132,14 +135,14 @@ section h3{
 }
 
 .project-card{
-    border-radius: 25px;
+    border-radius: 7px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
     background-color: #ffffff;
 }
 
 .project-image{
     width: 100%;
-    border-radius: 25px 25px 0 0 ;
+    border-radius: 7px 7px 0 0 ;
 }
 
 .project-card h4{
@@ -154,7 +157,10 @@ section h3{
 }
 
 .project-card p{
-    margin: 0.5em 0.5em 1em 0.7em;
+    /* margin-top: 0.5em; */
+    margin-right: 0.5em; 
+    margin-bottom: 1em;
+    margin-left: 0.7em;
 }
 
 .project-description{
@@ -163,9 +169,14 @@ section h3{
     font-weight: 300; /* light */
 }
 
+.project-description a{
+    font-weight: 400;
+}
+
 .project-language{
     font-family: 'Roboto', sans-serif;
     font-weight: 100; /* thin */
+    margin-top: auto;
 }
 
 .project-repo{
