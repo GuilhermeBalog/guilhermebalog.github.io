@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a65f353.chunk.css",
+    "main.js": "/static/js/main.23272315.chunk.js",
+    "main.js.map": "/static/js/main.23272315.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5e953786.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5e953786.js.map",
+    "static/js/2.7fff3bb3.chunk.js": "/static/js/2.7fff3bb3.chunk.js",
+    "static/js/2.7fff3bb3.chunk.js.map": "/static/js/2.7fff3bb3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a2292f9582ce1398bfcd4c2c530321c3.js": "/precache-manifest.a2292f9582ce1398bfcd4c2c530321c3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7a65f353.chunk.css.map": "/static/css/main.7a65f353.chunk.css.map",
+    "static/js/2.7fff3bb3.chunk.js.LICENSE.txt": "/static/js/2.7fff3bb3.chunk.js.LICENSE.txt",
+    "static/media/api.png": "/static/media/api.d65fd1dd.png",
+    "static/media/capivara-chat.png": "/static/media/capivara-chat.9bff165e.png",
+    "static/media/dev-radar.png": "/static/media/dev-radar.85e9df7c.png",
+    "static/media/genius.png": "/static/media/genius.949a2cf4.png",
+    "static/media/minesweeper.png": "/static/media/minesweeper.83e53fec.png",
+    "static/media/my-hello-worlds.png": "/static/media/my-hello-worlds.3385d8c9.png",
+    "static/media/portfolio-generator.png": "/static/media/portfolio-generator.f341108f.png",
+    "static/media/profile-picture.png": "/static/media/profile-picture.4e2538cc.png",
+    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.8ff74b31.png",
+    "static/media/todolist.png": "/static/media/todolist.e0fa569b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e953786.js",
+    "static/js/2.7fff3bb3.chunk.js",
+    "static/css/main.7a65f353.chunk.css",
+    "static/js/main.23272315.chunk.js"
+  ]
+}
