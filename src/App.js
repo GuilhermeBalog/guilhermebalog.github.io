@@ -1,10 +1,12 @@
 import React from 'react'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 import './App.css'
 
 import profilePicture from './profile-picture.png'
 
 import ProjectCard from './components/ProjectCard'
+import SafeLink from './components/SafeLink'
 import projects from './projects'
 
 function App() {
@@ -15,6 +17,18 @@ function App() {
                 <div className="title">
                     <h1>Guilherme Balog Gardino</h1>
                     <h2>Software Developer</h2>
+                    <div className="social-links">
+                        <div className="social-media">
+                            <SafeLink href="https://www.linkedin.com/in/guilherme-balog-gardino-233ab2186">
+                                <FaLinkedin size="25" color="#000" />
+                            </SafeLink>
+                        </div>
+                        <div className="social-media">
+                            <SafeLink href="https://github.com/GuilhermeBalog">
+                                <FaGithub size="25" color="#000" />
+                            </SafeLink>
+                        </div>
+                    </div>
                 </div>
             </header>
 

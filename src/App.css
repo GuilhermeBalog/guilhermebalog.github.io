@@ -4,6 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -43,6 +44,16 @@ header h2{
     margin: 0;
 }
 
+header .social-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+header .social-links .social-media{
+    margin-right: 5px;
+}
+
 section{
     width: 100%;
 }
@@ -68,6 +79,9 @@ section h3{
     }
     header h1, header h2{
         text-align: left;
+    }
+    header .social-links{
+        justify-content: flex-start;
     }
     .projects{
         grid-template-columns: repeat(2, 1fr);
