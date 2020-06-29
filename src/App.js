@@ -50,7 +50,7 @@ function App() {
                 <h3>Node Projects</h3>
                 <p>
                     These projects are more complex, using Node.js, ReactJS, and more.
-                    <strong>Note: </strong>some of these projects are't online, but you can check the source code.
+                    <strong> Note: </strong>some of these projects are't online, but you can check the source code.
                 </p>
 
                 <div className="projects">
