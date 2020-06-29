@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://guilhermebalog.github.io/</loc>
+  <lastmod>2020-06-29T16:15:45+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://guilhermebalog.github.io/tic-tac-toe/</loc>
+  <lastmod>2020-01-13T19:19:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://guilhermebalog.github.io/minesweeper/</loc>
+  <lastmod>2020-01-18T15:35:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://guilhermebalog.github.io/genius/</loc>
+  <lastmod>2020-03-25T22:41:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://guilhermebalog.github.io/js-music-keyboard/</loc>
+  <lastmod>2020-01-27T18:21:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://guilhermebalog.github.io/TodoList/</loc>
+  <lastmod>2019-10-10T16:42:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://guilhermebalog.github.io/my-hello-worlds/</loc>
+  <lastmod>2020-01-25T21:37:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://guilhermebalog.github.io/imersao-gamedev/</loc>
+  <lastmod>2020-06-29T16:30:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
