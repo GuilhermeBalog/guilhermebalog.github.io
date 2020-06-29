@@ -4,6 +4,7 @@ import genius from './genius.png'
 import todolist from './todolist.png'
 import keyboard from './js-music-keyboard.png'
 import hello from './my-hello-worlds.png'
+import game from './gamedev.png'
 
 import capivara from './capivara-chat.png'
 import dev from './dev-radar.png'
@@ -67,13 +68,21 @@ const projects = {
             image: hello,
         
         },
+        {
+            name: "Endless Runner",
+            description: "An Endless Runner Game on browser.",
+            languages: "Javascript, p5.js, HTML, CSS",
+            homepage: "https://guilhermebalog.github.io/imersao-gamedev/",
+            repo_url: "https://github.com/GuilhermeBalog/imersao-gamedev",
+            image: game
+        }
     ],
     
     node: [
         {
             name: "Capivara Chat",
             description: "Chat aplication made with Node.js and websockets.",
-            languages: "Node.js, HTML, CSS",
+            languages: "Node.js, Socket.io, HTML, CSS",
             homepage: "https://capivarachat.herokuapp.com",
             repo_url: "https://github.com/GuilhermeBalog/capivara-chat",
             image: capivara,
