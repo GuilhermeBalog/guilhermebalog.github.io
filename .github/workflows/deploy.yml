@@ -17,6 +17,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
       run: npm install
+    - name: Set email
+      run: git config user.email "guilherme.gardino@usp.br"
+    - name: Set name
+      run: git config user.name "Guilherme Balog"
     # - name: Build page
     #   run: npm run build
     - name: Build and deploy to gh-pages
