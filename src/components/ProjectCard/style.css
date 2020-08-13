@@ -6,6 +6,9 @@
 
 .project-image{
     width: 100%;
+    height: 180px;
+    object-fit: cover;
+    -o-object-fit: cover;
     border-radius: 7px 7px 0 0 ;
 }
 

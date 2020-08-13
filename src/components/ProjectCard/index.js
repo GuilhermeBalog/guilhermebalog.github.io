@@ -8,10 +8,10 @@ import './style.css'
 function ProjectCard({ project }){
     return (
         <div className="project-card">
-            <SafeLink href={project.homepage}>
+            <a href={project.homepage}>
                 <img src={project.image} alt={project.name} className="project-image" />
                 <h4>{project.name}</h4>
-            </SafeLink>
+            </a>
             <p className="project-description">{project.description}</p>
             <p className="project-language">{project.languages}</p>
             

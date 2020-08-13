@@ -10,6 +10,7 @@ import capivara from './capivara-chat.png'
 import dev from './dev-radar.png'
 import portfolio from './portfolio-generator.png'
 import api from './api.png'
+import motherWeather from './mother-weather.png'
 
 
 const projects = {
@@ -114,6 +115,14 @@ const projects = {
             repo_url: "https://github.com/GuilhermeBalog/ru-scraping",
             image: api,
         
+        },
+        {
+            name: "Mother Weather",
+            description: "Weather forecast in a funny way, like your mother would say.",
+            languages: "ReactJS, Typescript",
+            homepage: "https://guilhermebalog.github.io/mother-weather/",
+            repo_url: "https://github.com/GuilhermeBalog/mother-weather",
+            image: motherWeather
         }
     ]
 }
