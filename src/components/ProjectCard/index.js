@@ -5,7 +5,7 @@ import SafeLink from '../SafeLink'
 
 import './style.css'
 
-function ProjectCard({ project }){
+function ProjectCard({ project, iconColor }){
     return (
         <div className="project-card">
             <a href={project.homepage}>
@@ -17,7 +17,7 @@ function ProjectCard({ project }){
             
             <SafeLink href={project.repo_url}>
                 <p className="project-repo">
-                    <FaGithub size={16} color="#000" className="icon" />
+                    <FaGithub size={16} color={iconColor || '#000' } className="icon" />
                     Repositorie
                 </p>
             </SafeLink>

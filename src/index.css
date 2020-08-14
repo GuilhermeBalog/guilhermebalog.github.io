@@ -5,14 +5,24 @@
     box-sizing: border-box;
 }
 
-html, body, #root{
-    min-height: 100%; 
+html{
+    height: 100%;
+}
+
+body{
+    --bg: #f9f9f9;
+    --bg-lighter: #ffffff;
+    --border-color: rgba(0, 0, 0, 0.25);
+    --color-text: #000000;
+
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 #root{
-    background-color: #f9f9f9;
+    min-height: 100%; 
+    background-color: var(--bg);
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 300; /* light */

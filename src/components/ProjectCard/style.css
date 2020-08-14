@@ -1,7 +1,9 @@
 .project-card{
     border-radius: 7px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
-    background-color: #ffffff;
+    background-color: var(--bg-lighter);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-image{
@@ -16,24 +18,27 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.563em;
     font-weight: bold;
-    margin: 0.5em 0.5em 1em 0.5em;
+    margin: 0.5em 0.5em 0em 0.5em;
 }
 
 .project-card a{
-    color: #000000;
+    color: inherit;
 }
 
 .project-card p{
-    /* margin-top: 0.5em; */
     margin-right: 0.5em; 
-    margin-bottom: 1em;
     margin-left: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .project-description{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 300; /* light */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .project-description a{
@@ -43,12 +48,12 @@
 .project-language{
     font-family: 'Roboto', sans-serif;
     font-weight: 100; /* thin */
-    margin-top: auto;
 }
 
 .project-repo{
     display: flex;
     align-items: center;
+    margin-bottom: 1em !important;
 }
 
 .project-repo .icon{

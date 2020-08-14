@@ -6,6 +6,7 @@
     width: 90%;
     max-width: 1500px;
     margin: 0 auto;
+    color: var(--color-text);
 }
 
 header{
@@ -44,6 +45,10 @@ header h2{
     margin: 0;
 }
 
+header .title{
+    width: 100%;
+}
+
 header .social-links{
     display: flex;
     justify-content: center;
@@ -54,6 +59,22 @@ header .social-links .social-media{
     margin-right: 15px;
 }
 
+header .check-group{
+    align-self: flex-start;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+header .check-group label{
+    cursor: pointer;
+}
+
+header .check-group input{
+    display: none;
+}
+
 section{
     width: 100%;
 }
@@ -62,7 +83,7 @@ section h3{
     font-family: 'Rubik', sans-serif;
     font-size: 1.25em;
     font-weight: 500; /* medium */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .projects{
@@ -72,16 +93,22 @@ section h3{
     margin-bottom: 2em;
 }
 
-@media (min-width: 600px){
+@media (min-width: 615px){
     header{
         justify-content: flex-start;
         padding-top: 3em;
+    }
+    header .title{
+        width: auto;
     }
     header h1, header h2{
         text-align: left;
     }
     header .social-links{
         justify-content: flex-start;
+    }
+    header .check-group{
+        justify-content: flex-end;
     }
     .projects{
         grid-template-columns: repeat(2, 1fr);
