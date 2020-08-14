@@ -11,16 +11,12 @@ import projects from './projects'
 import { useEffect } from 'react'
 
 function App() {
-    function getStyle(style){
-        return getComputedStyle(document.body).getPropertyValue(style)
-    }
 
     const defaulfTheme = {
-        bg: getStyle('--bg'),
-        bgLighter: getStyle('--bg-lighter'),
-        borderColor: getStyle('--border-color'),
-        colorText: getStyle('--color-text'),
-        icon: FaRegMoon,
+        bg: '#f9f9f9',
+        bgLighter: '#ffffff',
+        borderColor: '#00000040',
+        colorText: '#000000',
     }
 
     const darkTheme = {
@@ -28,12 +24,34 @@ function App() {
         bgLighter: '#333333',
         borderColor: '#ffffff40',
         colorText: '#ffffff',
-        icon: FaMoon,
+    }
+
+    function store(key, item){
+        localStorage.setItem(`@guilhermebalog/${key}`, JSON.stringify(item))
+    }
+    
+    function getFromStorage(key){
+        return JSON.parse(localStorage.getItem(`@guilhermebalog/${key}`))
     }
 
     const [theme, setTheme] = useState(defaulfTheme)
+    const [isDarkThemeChecked, setIsDarkThemeChecked] = useState(false)
 
     useEffect(() => {
+        const storedTheme = getFromStorage('theme')
+        if(storedTheme){
+            setTheme(storedTheme)
+        }
+
+        const storedChecked = getFromStorage('checked')
+        if(storedChecked){
+            setIsDarkThemeChecked(storedChecked)
+        }
+    }, [])
+
+    useEffect(() => {
+        store('theme', theme)
+
         Object.keys(theme).forEach(key => {
             document.body.style.setProperty(transformKey(key), theme[key])
         })
@@ -42,6 +60,8 @@ function App() {
             return '--' + key.replace(/([A-Z])/g, "-$1").toLowerCase()
         }
     }, [theme])
+
+    useEffect(() => store('checked', isDarkThemeChecked), [isDarkThemeChecked])
 
     return (
         <div id="App">
@@ -66,11 +86,20 @@ function App() {
                 <div className="check-group">
                     <input 
                         type="checkbox" 
-                        onChange={e => e.target.checked? setTheme(darkTheme) : setTheme(defaulfTheme)} 
+                        onChange={() => {
+                            isDarkThemeChecked? setTheme(defaulfTheme) : setTheme(darkTheme)
+                            setIsDarkThemeChecked(!isDarkThemeChecked)
+                        }}
+                        checked={isDarkThemeChecked} 
                         id="theme"
                     />
                     <label htmlFor="theme">
-                        <theme.icon size="35" color={theme.colorText} />
+                        {(() => {
+                            if(isDarkThemeChecked)
+                                return <FaMoon size="35" color={theme.colorText} />
+                            else
+                                return <FaRegMoon size="35" color={theme.colorText} />
+                        })()}
                     </label>
                 </div>
             </header>
