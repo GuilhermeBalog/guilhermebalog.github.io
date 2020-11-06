@@ -1,0 +1,15 @@
+name: Notify
+
+on: pull_request
+
+jobs:
+  notify_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_EMBEDS: [{ "title": ${{ github.event.pull_request.title }}, "description": ${{ github.event.pull_request.body }}, "author": { "name": ${{ github.event.sender.login }}, "icon_url": ${{ github.event.sender.avatar_url }}}, "url": ${{ github.event.pull_request.html_url }} }]
+        uses: Ilshidur/action-discord@master
+        with:
+          args: '**{{ EVENT_PAYLOAD.sender.login }}** abriu uma pull request no projeto **{{ EVENT_PAYLOAD.repository.full_name }}**!'
