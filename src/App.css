@@ -59,6 +59,11 @@ header .social-links .social-media{
     margin-right: 15px;
 }
 
+header .social-links .social-media span{
+    display: none;
+}
+
+
 header .check-group{
     align-self: flex-start;
     flex-grow: 1;

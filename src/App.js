@@ -74,11 +74,13 @@ function App() {
                         <div className="social-media">
                             <SafeLink href="https://www.linkedin.com/in/guilherme-balog-gardino-233ab2186">
                                 <FaLinkedin size="25" color={theme.colorText} />
+                                <span>Linkedin</span>
                             </SafeLink>
                         </div>
                         <div className="social-media">
                             <SafeLink href="https://github.com/GuilhermeBalog">
                                 <FaGithub size="25" color={theme.colorText} />
+                                <span>Github</span>
                             </SafeLink>
                         </div>
                     </div>
