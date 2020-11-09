@@ -74,7 +74,7 @@ function App() {
                         <div className="social-media">
                             <SafeLink href="https://www.linkedin.com/in/guilherme-balog-gardino-233ab2186">
                                 <FaLinkedin size="25" color={theme.colorText} />
-                                <span>Linkedin</span>
+                                <span>LinkedIn</span>
                             </SafeLink>
                         </div>
                         <div className="social-media">
