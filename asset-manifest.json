@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6812bc53.chunk.css",
+    "main.js": "/static/js/main.7bcd647e.chunk.js",
+    "main.js.map": "/static/js/main.7bcd647e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c9f1c9eb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c9f1c9eb.js.map",
+    "static/js/2.3b364e07.chunk.js": "/static/js/2.3b364e07.chunk.js",
+    "static/js/2.3b364e07.chunk.js.map": "/static/js/2.3b364e07.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.41c7d4680f0ca6b60420ab6f1d57a554.js": "/precache-manifest.41c7d4680f0ca6b60420ab6f1d57a554.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6812bc53.chunk.css.map": "/static/css/main.6812bc53.chunk.css.map",
+    "static/js/2.3b364e07.chunk.js.LICENSE.txt": "/static/js/2.3b364e07.chunk.js.LICENSE.txt",
+    "static/media/api.png": "/static/media/api.d65fd1dd.png",
+    "static/media/capivara-chat.png": "/static/media/capivara-chat.9bff165e.png",
+    "static/media/dev-radar.png": "/static/media/dev-radar.85e9df7c.png",
+    "static/media/gamedev.png": "/static/media/gamedev.396c0129.png",
+    "static/media/genius.png": "/static/media/genius.949a2cf4.png",
+    "static/media/minesweeper.png": "/static/media/minesweeper.83e53fec.png",
+    "static/media/mother-weather.png": "/static/media/mother-weather.247e6df7.png",
+    "static/media/my-hello-worlds.png": "/static/media/my-hello-worlds.3385d8c9.png",
+    "static/media/portfolio-generator.png": "/static/media/portfolio-generator.f341108f.png",
+    "static/media/profile-picture.png": "/static/media/profile-picture.4e2538cc.png",
+    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.8ff74b31.png",
+    "static/media/todolist.png": "/static/media/todolist.e0fa569b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9f1c9eb.js",
+    "static/js/2.3b364e07.chunk.js",
+    "static/css/main.6812bc53.chunk.css",
+    "static/js/main.7bcd647e.chunk.js"
+  ]
+}
