@@ -15,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "react-snapshot",
