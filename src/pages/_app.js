@@ -1,26 +1,24 @@
 import Head from 'next/head'
 
-import '../index.css'
-import '../App.css'
+import '../styles/index.css'
 
-/* eslint-disable react/react-in-jsx-scope */
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#5e22af" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="manifest" href="/manifest.json" />
 
         <title>Guilherme Balog Gardino | Software Developer</title>
         <meta name="description" content="I am a Software Developer, in love with tech solutions" />
 
-        <meta itemprop="name" content="Guilherme Balog Gardino | Software Developer" />
-        <meta itemprop="description" content="I am a Software Developer, in love with tech solutions" />
-        <meta itemprop="image" content="http://avatars0.githubusercontent.com/u/38947601?v=4" />
+        <meta itemProp="name" content="Guilherme Balog Gardino | Software Developer" />
+        <meta itemProp="description" content="I am a Software Developer, in love with tech solutions" />
+        <meta itemProp="image" content="http://avatars0.githubusercontent.com/u/38947601?v=4" />
 
         <meta property="og:title" content="Guilherme Balog Gardino | Software Developer" />
         <meta property="og:description" content="Guilherme is a Software Developer, in love with tech solutions" />

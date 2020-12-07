@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaMoon, FaRegMoon } from 'react-icons/fa'
 
 import ProjectCard from '../components/ProjectCard'
 import SafeLink from '../components/SafeLink'
-import projects from '../projects'
+import projects from '../../projects.json'
 import { useEffect } from 'react'
 
 function App() {
