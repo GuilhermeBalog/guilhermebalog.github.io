@@ -1,18 +1,3 @@
-import ticTacToe from './tic-tac-toe.png'
-import minesweeper from './minesweeper.png'
-import genius from './genius.png'
-import todolist from './todolist.png'
-import keyboard from './js-music-keyboard.png'
-import hello from './my-hello-worlds.png'
-import game from './gamedev.png'
-
-import capivara from './capivara-chat.png'
-import dev from './dev-radar.png'
-import portfolio from './portfolio-generator.png'
-import api from './api.png'
-import motherWeather from './mother-weather.png'
-
-
 const projects = {
     web: [
         {
@@ -21,8 +6,8 @@ const projects = {
             languages: "JavaScript, HTML, CSS",
             homepage: "https://guilhermebalog.github.io/tic-tac-toe",
             repo_url: "https://github.com/GuilhermeBalog/tic-tac-toe",
-            image: ticTacToe,
-        
+            image: '/tic-tac-toe.png',
+
         },
         {
             name: "Minesweeper",
@@ -30,8 +15,8 @@ const projects = {
             languages: "JavaScript, HTML, CSS",
             homepage: "https://guilhermebalog.github.io/minesweeper",
             repo_url: "https://github.com/GuilhermeBalog/minesweeper",
-            image: minesweeper,
-        
+            image: '/minesweeper.png',
+
         },
         {
             name: "Genius",
@@ -39,8 +24,8 @@ const projects = {
             languages: "JavaScript, HTML, CSS",
             homepage: "https://guilhermebalog.github.io/genius",
             repo_url: "https://github.com/GuilhermeBalog/genius",
-            image: genius,
-        
+            image: '/genius.png',
+
         },
         {
             name: "Music Keyboard",
@@ -48,8 +33,8 @@ const projects = {
             languages: "JavaScript, HTML, CSS",
             homepage: "https://guilhermebalog.github.io/js-music-keyboard",
             repo_url: "https://github.com/GuilhermeBalog/js-music-keyboard",
-            image: keyboard,
-        
+            image: '/js-music-keyboard.png',
+
         },
         {
             name: "To Do List",
@@ -57,8 +42,8 @@ const projects = {
             languages: "JavaScript, HTML, CSS",
             homepage: "https://guilhermebalog.github.io/TodoList",
             repo_url: "https://github.com/GuilhermeBalog/TodoList",
-            image: todolist,
-        
+            image: '/todolist.png',
+
         },
         {
             name: "Hello Worlds",
@@ -66,8 +51,8 @@ const projects = {
             languages: "JavaScript, HTML, CSS",
             homepage: "https://guilhermebalog.github.io/my-hello-worlds",
             repo_url: "https://github.com/GuilhermeBalog/my-hello-worlds",
-            image: hello,
-        
+            image: '/my-hello-worlds.png',
+
         },
         {
             name: "Endless Runner",
@@ -75,10 +60,10 @@ const projects = {
             languages: "Javascript, p5.js, HTML, CSS",
             homepage: "https://guilhermebalog.github.io/imersao-gamedev/",
             repo_url: "https://github.com/GuilhermeBalog/imersao-gamedev",
-            image: game
+            image: '/gamedev.png'
         }
     ],
-    
+
     node: [
         {
             name: "Capivara Chat",
@@ -86,8 +71,8 @@ const projects = {
             languages: "Node.js, Socket.io, HTML, CSS",
             homepage: "https://capivarachat.herokuapp.com",
             repo_url: "https://github.com/GuilhermeBalog/capivara-chat",
-            image: capivara,
-        
+            image: '/capivara-chat.png',
+
         },
         {
             name: "Dev Radar",
@@ -95,8 +80,8 @@ const projects = {
             languages: "Node.js, ReactJS, React Native",
             homepage: "https://github.com/GuilhermeBalog/dev-radar",
             repo_url: "https://github.com/GuilhermeBalog/dev-radar",
-            image: dev,
-        
+            image: '/dev-radar.png',
+
         },
         {
             name: "Portfolio Generator",
@@ -104,8 +89,8 @@ const projects = {
             languages: "Node.js, ReactJS, React Native",
             homepage: "https://balogportfoliogenerator.herokuapp.com",
             repo_url: "https://github.com/GuilhermeBalog/portfolio-generator",
-            image: portfolio,
-        
+            image: '/portfolio-generator.png',
+
         },
         {
             name: "University Cafeteria Menu",
@@ -113,8 +98,8 @@ const projects = {
             languages: "Node.js, Pupeteer.js",
             homepage: "https://ru-scraping.herokuapp.com",
             repo_url: "https://github.com/GuilhermeBalog/ru-scraping",
-            image: api,
-        
+            image: '/api.png',
+
         },
         {
             name: "Mother Weather",
@@ -122,10 +107,9 @@ const projects = {
             languages: "ReactJS, Typescript",
             homepage: "https://guilhermebalog.github.io/mother-weather/",
             repo_url: "https://github.com/GuilhermeBalog/mother-weather",
-            image: motherWeather
+            image: '/mother-weather.png'
         }
     ]
 }
 
-export default projects 
-
+export default projects

@@ -20,8 +20,8 @@ body{
     padding: 0;
 }
 
-#root{
-    min-height: 100%; 
+#__next{
+    min-height: 100%;
     background-color: var(--bg);
     font-family: 'Roboto', sans-serif;
     font-size: 1em;

@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import { FaLinkedin, FaGithub, FaMoon, FaRegMoon } from 'react-icons/fa'
 
-import './App.css'
-
-import profilePicture from './profile-picture.png'
-
-import ProjectCard from './components/ProjectCard'
-import SafeLink from './components/SafeLink'
-import projects from './projects'
+import ProjectCard from '../components/ProjectCard'
+import SafeLink from '../components/SafeLink'
+import projects from '../projects'
 import { useEffect } from 'react'
 
 function App() {
@@ -26,11 +22,11 @@ function App() {
         colorText: '#ffffff',
     }
 
-    function store(key, item){
+    function store(key, item) {
         localStorage.setItem(`@guilhermebalog/${key}`, JSON.stringify(item))
     }
-    
-    function getFromStorage(key){
+
+    function getFromStorage(key) {
         return JSON.parse(localStorage.getItem(`@guilhermebalog/${key}`))
     }
 
@@ -39,12 +35,12 @@ function App() {
 
     useEffect(() => {
         const storedTheme = getFromStorage('theme')
-        if(storedTheme){
+        if (storedTheme) {
             setTheme(storedTheme)
         }
 
         const storedChecked = getFromStorage('checked')
-        if(storedChecked){
+        if (storedChecked) {
             setIsDarkThemeChecked(storedChecked)
         }
     }, [])
@@ -56,7 +52,7 @@ function App() {
             document.body.style.setProperty(transformKey(key), theme[key])
         })
 
-        function transformKey(key){
+        function transformKey(key) {
             return '--' + key.replace(/([A-Z])/g, "-$1").toLowerCase()
         }
     }, [theme])
@@ -66,7 +62,7 @@ function App() {
     return (
         <div id="App">
             <header>
-                <img src={profilePicture} alt="Guilherme Balog Gardino" />
+                <img src="/profile-picture.png" alt="Guilherme Balog Gardino" />
                 <div className="title">
                     <h1>Guilherme Balog Gardino</h1>
                     <h2>Software Developer</h2>
@@ -86,18 +82,18 @@ function App() {
                     </div>
                 </div>
                 <div className="check-group">
-                    <input 
-                        type="checkbox" 
+                    <input
+                        type="checkbox"
                         onChange={() => {
-                            isDarkThemeChecked? setTheme(defaulfTheme) : setTheme(darkTheme)
+                            isDarkThemeChecked ? setTheme(defaulfTheme) : setTheme(darkTheme)
                             setIsDarkThemeChecked(!isDarkThemeChecked)
                         }}
-                        checked={isDarkThemeChecked} 
+                        checked={isDarkThemeChecked}
                         id="theme"
                     />
                     <label htmlFor="theme">
                         {(() => {
-                            if(isDarkThemeChecked)
+                            if (isDarkThemeChecked)
                                 return <FaMoon size="35" color={theme.colorText} />
                             else
                                 return <FaRegMoon size="35" color={theme.colorText} />
@@ -113,10 +109,10 @@ function App() {
 
             <section>
                 <h3>Web Projects</h3>
-                <p>Each project here is a static page, using APIs, frameworks and pure JavaScript too.</p>   
+                <p>Each project here is a static page, using APIs, frameworks and pure JavaScript too.</p>
 
                 <div className="projects">
-                    {projects.web.map(project => (<ProjectCard key={project.name} project={project} iconColor={theme.colorText} /> ))}
+                    {projects.web.map(project => (<ProjectCard key={project.name} project={project} iconColor={theme.colorText} />))}
                 </div>
             </section>
 
@@ -128,7 +124,7 @@ function App() {
                 </p>
 
                 <div className="projects">
-                    { projects.node.map(project => (<ProjectCard key={project.name} project={project} iconColor={theme.colorText} /> )) }
+                    {projects.node.map(project => (<ProjectCard key={project.name} project={project} iconColor={theme.colorText} />))}
                 </div>
             </section>
         </div>

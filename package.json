@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "gh-pages": "^2.2.0",
+    "next": "^10.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
@@ -16,9 +17,9 @@
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "react-snapshot",
+    "start": "next start",
+    "build": "next build && next export",
+    "dev": "next dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
