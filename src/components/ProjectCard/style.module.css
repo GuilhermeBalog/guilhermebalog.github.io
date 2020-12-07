@@ -1,4 +1,4 @@
-.project-card{
+.projectCard{
     border-radius: 7px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
     background-color: var(--bg-lighter);
@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.project-image{
+.projectImage{
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -14,25 +14,25 @@
     border-radius: 7px 7px 0 0 ;
 }
 
-.project-card h4{
+.projectCard h4{
     font-family: 'Roboto', sans-serif;
     font-size: 1.563em;
     font-weight: bold;
     margin: 0.5em 0.5em 0em 0.5em;
 }
 
-.project-card a{
+.projectCard a{
     color: inherit;
 }
 
-.project-card p{
-    margin-right: 0.5em; 
+.projectCard p{
+    margin-right: 0.5em;
     margin-left: 0.7em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
-.project-description{
+.projectDescription{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 300; /* light */
@@ -41,21 +41,21 @@
     align-items: center;
 }
 
-.project-description a{
+.projectDescription a{
     font-weight: 400;
 }
 
-.project-language{
+.projectLanguage{
     font-family: 'Roboto', sans-serif;
     font-weight: 100; /* thin */
 }
 
-.project-repo{
+.projectRepo{
     display: flex;
     align-items: center;
     margin-bottom: 1em !important;
 }
 
-.project-repo .icon{
+.projectRepo .icon{
     margin-right: 0.5rem;
 }
