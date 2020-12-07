@@ -54,7 +54,7 @@
       "languages": "Javascript, p5.js, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/imersao-gamedev/",
       "repo_url": "https://github.com/GuilhermeBalog/imersao-gamedev",
-      "image": "/gamedev.pn"
+      "image": "/gamedev.png"
     }
   ],
   "node": [
@@ -96,7 +96,7 @@
       "languages": "ReactJS, Typescript",
       "homepage": "https://guilhermebalog.github.io/mother-weather/",
       "repo_url": "https://github.com/GuilhermeBalog/mother-weather",
-      "image": "/mother-weather.pn"
+      "image": "/mother-weather.png"
     }
   ]
 }
