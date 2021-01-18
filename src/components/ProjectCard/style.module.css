@@ -38,7 +38,7 @@
     font-weight: 300; /* light */
     flex-grow: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .projectDescription a{
@@ -50,12 +50,16 @@
     font-weight: 100; /* thin */
 }
 
-.projectRepo{
+.projectFooter{
+    display: flex;
+}
+
+.projectLink{
     display: flex;
     align-items: center;
     margin-bottom: 1em !important;
 }
 
-.projectRepo .icon{
+.projectLink .icon{
     margin-right: 0.5rem;
 }

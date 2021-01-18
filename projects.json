@@ -1,16 +1,16 @@
 {
   "web": [
     {
-      "name": "Tic Tac Toe",
-      "description": "My implementation of Tic Tac Toe game.",
+      "name": "Jogo da Velha",
+      "description": "Minha implementação do clássico Jogo da Velha, usando a tríade da web",
       "languages": "JavaScript, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/tic-tac-toe",
       "repo_url": "https://github.com/GuilhermeBalog/tic-tac-toe",
       "image": "/tic-tac-toe.png"
     },
     {
-      "name": "Minesweeper",
-      "description": "Web version of the classic Minesweeper.",
+      "name": "Campo minado",
+      "description": "Versão web do clássico jogo Campo Minado, utilizando o canvas.",
       "languages": "JavaScript, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/minesweeper",
       "repo_url": "https://github.com/GuilhermeBalog/minesweeper",
@@ -18,23 +18,23 @@
     },
     {
       "name": "Genius",
-      "description": "Digital version of Genius!",
-      "languages": "JavaScript, HTML, CSS",
+      "description": "Versão digital do brinquedo Genius, utilizando a biblioteca Tone.js para tocar os sons",
+      "languages": "JavaScript, Tone.js, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/genius",
       "repo_url": "https://github.com/GuilhermeBalog/genius",
       "image": "/genius.png"
     },
     {
-      "name": "Music Keyboard",
-      "description": "A music keyboard made in with the Tone.js framework.",
-      "languages": "JavaScript, HTML, CSS",
+      "name": "Teclado Musical",
+      "description": "Um teclado musical feito com JavaScript manipulando a DOM e a biblioteca Tone.js.",
+      "languages": "JavaScript, Tone.js, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/js-music-keyboard",
       "repo_url": "https://github.com/GuilhermeBalog/js-music-keyboard",
       "image": "/js-music-keyboard.png"
     },
     {
       "name": "To Do List",
-      "description": "A simple To-do list app, made with pure Javascript.",
+      "description": "Uma aplicação de To-do list feito com JavaScript puro, salvando no local storage.",
       "languages": "JavaScript, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/TodoList",
       "repo_url": "https://github.com/GuilhermeBalog/TodoList",
@@ -42,15 +42,15 @@
     },
     {
       "name": "Hello Worlds",
-      "description": "This is a web page with all languages that I know.",
+      "description": "Uma página web com códigos de \"Hello World\" em algumas linguagens que conheço.",
       "languages": "JavaScript, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/my-hello-worlds",
       "repo_url": "https://github.com/GuilhermeBalog/my-hello-worlds",
       "image": "/my-hello-worlds.png"
     },
     {
-      "name": "Endless Runner",
-      "description": "An Endless Runner Game on browser.",
+      "name": "As Aventuras de Hipsta",
+      "description": "Um jogo Endless Runner feito utilizando a biblioteca p5.js.",
       "languages": "Javascript, p5.js, HTML, CSS",
       "homepage": "https://guilhermebalog.github.io/imersao-gamedev/",
       "repo_url": "https://github.com/GuilhermeBalog/imersao-gamedev",
@@ -60,7 +60,7 @@
   "node": [
     {
       "name": "Capivara Chat",
-      "description": "Chat aplication made with Node.js and websockets.",
+      "description": "Uma aplicação de chat público utilizando o protocolo WebSocket.",
       "languages": "Node.js, Socket.io, HTML, CSS",
       "homepage": "https://capivarachat.herokuapp.com",
       "repo_url": "https://github.com/GuilhermeBalog/capivara-chat",
@@ -68,31 +68,31 @@
     },
     {
       "name": "Dev Radar",
-      "description": "Full Stack App to help you finding devs near you.",
+      "description": "Encontre desenvolvedores perto de você com esse app. Um projeto full stack: API feita com Node.js, Frontend feito com ReactJS e app mobile feito com React Native.",
       "languages": "Node.js, ReactJS, React Native",
       "homepage": "https://github.com/GuilhermeBalog/dev-radar",
       "repo_url": "https://github.com/GuilhermeBalog/dev-radar",
       "image": "/dev-radar.png"
     },
     {
-      "name": "Portfolio Generator",
-      "description": "Generate a portfolio (like this site) from your Github repositories.",
-      "languages": "Node.js, ReactJS, React Native",
+      "name": "Gerador de Portfólio",
+      "description": "Gere uma portfólio (parecido com este site) a partir do seu perfil do GitHub. Projeto feito com ReactJS, consumindo a API do GitHub",
+      "languages": "Node.js, ReactJS",
       "homepage": "https://balogportfoliogenerator.herokuapp.com",
       "repo_url": "https://github.com/GuilhermeBalog/portfolio-generator",
       "image": "/portfolio-generator.png"
     },
     {
-      "name": "University Cafeteria Menu",
-      "description": "API that uses Webscraping to serve the menu of University of São Paulo's Cafeteria.",
-      "languages": "Node.js, Pupeteer.js",
+      "name": "API Bandejão da USP",
+      "description": "API para obter o cardápio do restaurante universitário da Universidade de São Paulo. A API usa WebScraping para pegar os dados do site do cardápio e servi-los no formato JSON.",
+      "languages": "Node.js, Puppeteer.js, Express.js",
       "homepage": "https://ru-scraping.herokuapp.com",
       "repo_url": "https://github.com/GuilhermeBalog/ru-scraping",
       "image": "/api.png"
     },
     {
       "name": "Mother Weather",
-      "description": "Weather forecast in a funny way, like your mother would say.",
+      "description": "Previsão do tempo de uma forma divertida, uma mãe diria. Meu primeiro projeto usando TypeScript e a previsão do tempo é feita com a API do Meteorologisk institutt",
       "languages": "ReactJS, Typescript",
       "homepage": "https://guilhermebalog.github.io/mother-weather/",
       "repo_url": "https://github.com/GuilhermeBalog/mother-weather",
