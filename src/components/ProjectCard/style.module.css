@@ -15,9 +15,8 @@
 }
 
 .projectCard h4 {
-  font-family: 'Roboto', sans-serif;
   font-size: 1.563em;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0.5em 0.5em 0em 0.5em;
 }
 
@@ -33,9 +32,8 @@
 }
 
 .projectDescription {
-  font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  font-weight: 300; /* light */
+  font-weight: 400;
   flex-grow: 1;
   display: flex;
   align-items: flex-start;
@@ -46,12 +44,12 @@
 }
 
 .projectLanguage {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100; /* thin */
+  font-weight: 300;
 }
 
 .projectFooter {
   display: flex;
+  font-weight: 500;
 }
 
 .projectLink {
