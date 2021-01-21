@@ -78,7 +78,7 @@
       "name": "Gerador de Portfólio",
       "description": "Gere uma portfólio (parecido com este site) a partir do seu perfil do GitHub. Projeto feito com ReactJS, consumindo a API do GitHub",
       "languages": "Node.js, ReactJS",
-      "homepage": "https://balogportfoliogenerator.herokuapp.com",
+      "homepage": "https://guilhermebalog.ga/portfolio-generator/",
       "repo_url": "https://github.com/GuilhermeBalog/portfolio-generator",
       "image": "/portfolio-generator.png"
     },
