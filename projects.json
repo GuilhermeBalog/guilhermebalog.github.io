@@ -51,7 +51,7 @@
     {
       "name": "As Aventuras de Hipsta",
       "description": "Um jogo Endless Runner feito utilizando a biblioteca p5.js.",
-      "languages": "Javascript, p5.js, HTML, CSS",
+      "languages": "JavaScript, p5.js, HTML, CSS",
       "homepage": "https://guilhermebalog.ga/imersao-gamedev/",
       "repo_url": "https://github.com/GuilhermeBalog/imersao-gamedev",
       "image": "/gamedev.png"
@@ -60,7 +60,7 @@
   "node": [
     {
       "name": "Capivara Chat",
-      "description": "Uma aplicação de chat público utilizando o protocolo WebSocket.",
+      "description": "Uma aplicação de chat público utilizando o protocolo WebSocket com a biblioteca Socket.io.",
       "languages": "Node.js, Socket.io, HTML, CSS",
       "homepage": "https://capivarachat.herokuapp.com",
       "repo_url": "https://github.com/GuilhermeBalog/capivara-chat",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Dev Radar",
-      "description": "Encontre desenvolvedores perto de você com esse app. Um projeto full stack: API feita com Node.js, Frontend feito com ReactJS e app mobile feito com React Native.",
+      "description": "Encontre desenvolvedores perto de você com esse app. Um projeto fullstack: API feita com Node.js, Frontend feito com ReactJS e app mobile feito com React Native.",
       "languages": "Node.js, ReactJS, React Native",
       "homepage": "https://github.com/GuilhermeBalog/dev-radar",
       "repo_url": "https://github.com/GuilhermeBalog/dev-radar",

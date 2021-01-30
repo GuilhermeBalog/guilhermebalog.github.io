@@ -21,7 +21,7 @@ function ProjectCard({ project, iconColor }) {
 
       <div className={styles.projectFooter}>
         {project.homepage && project.homepage !== project.repo_url && (
-          <SafeLink href={project.homepage}>
+          <a href={project.homepage}>
             <p className={styles.projectLink}>
               <FaGlobeAmericas
                 size={18}
@@ -30,7 +30,7 @@ function ProjectCard({ project, iconColor }) {
               />
               Acesse
             </p>
-          </SafeLink>
+          </a>
         )}
 
         <SafeLink href={project.repo_url}>
