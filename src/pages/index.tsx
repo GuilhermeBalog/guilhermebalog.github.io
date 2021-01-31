@@ -6,6 +6,7 @@ import SafeLink from '../components/SafeLink';
 import projects from '../../projects.json';
 import formations from '../../formations.json';
 import FormationCard from '../components/FormationCard';
+import ProfilePicture from '../components/ProfilePicture';
 
 function App() {
   const defaultTheme = {
@@ -62,7 +63,7 @@ function App() {
   return (
     <div id="App">
       <header>
-        <img src="/profile-picture.png" alt="Guilherme Balog Gardino" />
+        <ProfilePicture />
 
         <div className="title">
           <h1>Guilherme Balog Gardino</h1>
