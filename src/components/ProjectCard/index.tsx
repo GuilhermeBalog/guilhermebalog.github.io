@@ -5,7 +5,21 @@ import SafeLink from '../SafeLink';
 
 import styles from './style.module.css';
 
-function ProjectCard({ project, iconColor }) {
+interface Project {
+  name: string;
+  description: string;
+  languages: string;
+  homepage: string;
+  repo_url: string;
+  image: string;
+}
+
+interface Props {
+  project: Project;
+  iconColor: string;
+}
+
+const ProjectCard: React.FC<Props> = ({ project, iconColor }) => {
   return (
     <div className={styles.projectCard}>
       <a href={project.homepage}>
@@ -46,6 +60,6 @@ function ProjectCard({ project, iconColor }) {
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

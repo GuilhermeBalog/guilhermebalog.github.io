@@ -1,6 +1,17 @@
 import React from 'react';
 
-function FormationCard({ formation }) {
+interface Formation {
+  title: string;
+  institution: string;
+  period: string;
+  description: string;
+}
+
+interface Props {
+  formation: Formation;
+}
+
+const FormationCard: React.FC<Props> = ({ formation }) => {
   return (
     <div>
       <h4>
@@ -12,6 +23,6 @@ function FormationCard({ formation }) {
       <p>{formation.description}</p>
     </div>
   );
-}
+};
 
 export default FormationCard;

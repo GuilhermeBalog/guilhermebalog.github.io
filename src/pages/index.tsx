@@ -23,7 +23,7 @@ function App() {
     colorText: '#ffffff'
   };
 
-  function store(key: string, item: any) {
+  function store(key: string, item: object | boolean) {
     localStorage.setItem(`@guilhermebalog/${key}`, JSON.stringify(item));
   }
 
@@ -49,8 +49,8 @@ function App() {
   useEffect(() => {
     store('theme', theme);
 
-    Object.keys(theme).forEach(key => {
-      document.body.style.setProperty(transformKey(key), theme[key]);
+    Object.entries(theme).forEach(([key, value]) => {
+      document.body.style.setProperty(transformKey(key), value);
     });
 
     function transformKey(key: string) {
