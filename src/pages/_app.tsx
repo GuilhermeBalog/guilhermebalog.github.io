@@ -19,18 +19,18 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
 
-        <title>Guilherme Balog Gardino | Software Developer</title>
+        <title>Guilherme Balog Gardino | Desenvolvedor de software</title>
         <meta
           name="description"
-          content="I am a Software Developer, in love with tech solutions"
+          content="Olá! Meu nome é Guilherme Balog Gardino e sou desenvolvedor de software em São Paulo, Brasil. Trabalho principalmente como programador fullstack usando Node.js e React.js, mas gosto muito de experimentar diferentes ferramentas e linguagens e com elas construir projetos inusitados."
         />
         <meta
           itemProp="name"
-          content="Guilherme Balog Gardino | Software Developer"
+          content="Guilherme Balog Gardino | Desenvolvedor de software"
         />
         <meta
           itemProp="description"
-          content="I am a Software Developer, in love with tech solutions"
+          content="Olá! Meu nome é Guilherme Balog Gardino e sou desenvolvedor de software em São Paulo, Brasil. Trabalho principalmente como programador fullstack usando Node.js e React.js, mas gosto muito de experimentar diferentes ferramentas e linguagens e com elas construir projetos inusitados."
         />
         <meta
           itemProp="image"
@@ -38,7 +38,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:title"
-          content="Guilherme Balog Gardino | Software Developer"
+          content="Guilherme Balog Gardino | Desenvolvedor de software"
         />
         <meta
           property="og:description"
@@ -57,11 +57,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Guilherme Balog Gardino | Software Developer"
+          content="Guilherme Balog Gardino | Desenvolvedor de software"
         />
         <meta
           name="twitter:description"
-          content="I am a Software Developer, in love with tech solutions"
+          content="Olá! Meu nome é Guilherme Balog Gardino e sou desenvolvedor de software em São Paulo, Brasil. Trabalho principalmente como programador fullstack usando Node.js e React.js, mas gosto muito de experimentar diferentes ferramentas e linguagens e com elas construir projetos inusitados."
         />
         <meta
           name="twitter:image"
