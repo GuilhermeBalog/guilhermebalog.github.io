@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { FaLinkedin, FaGithub, FaMoon, FaRegMoon } from 'react-icons/fa';
 
+import projects from '../../public/projects.json';
+import education from '../../public/education.json';
+import workExperience from '../../public/workExperience.json';
+
 import ProjectCard from '../components/ProjectCard';
 import SafeLink from '../components/SafeLink';
-import projects from '../../projects.json';
-import formations from '../../formations.json';
-import FormationCard from '../components/FormationCard';
+import Education from '../components/Education';
+import Work from '../components/Work';
 import ProfilePicture from '../components/ProfilePicture';
 
 function App() {
@@ -119,9 +122,16 @@ function App() {
       </section>
 
       <section>
+        <h3>Experiência profissional</h3>
+        {workExperience.map((work, i) => (
+          <Work work={work} key={i} />
+        ))}
+      </section>
+
+      <section>
         <h3>Formação</h3>
-        {formations.map((formation, i) => (
-          <FormationCard formation={formation} key={i} />
+        {education.map((formation, i) => (
+          <Education formation={formation} key={i} />
         ))}
       </section>
 

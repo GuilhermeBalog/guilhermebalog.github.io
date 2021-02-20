@@ -15,10 +15,10 @@ const FormationCard: React.FC<Props> = ({ formation }) => {
   return (
     <div>
       <h4>
-        {formation.title} - {formation.period}
+        {formation.title} - {formation.institution}
       </h4>
       <p>
-        <strong>{formation.institution}</strong>
+        <strong>{formation.period}</strong>
       </p>
       <p>{formation.description}</p>
     </div>
