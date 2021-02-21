@@ -86,8 +86,8 @@ header .social-links {
   margin-top: 5px;
 }
 
-header .social-links .social-media {
-  margin-right: 15px;
+header .social-links .social-media:first-of-type {
+  margin-right: 3rem;
 }
 
 header .social-links .social-media a {
