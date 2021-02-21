@@ -83,6 +83,7 @@ header .title {
 header .social-links {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 5px;
 }
 
@@ -137,7 +138,7 @@ section p {
   margin-bottom: 2em;
 }
 
-@media (min-width: 615px) {
+@media (min-width: 650px) {
   header {
     justify-content: flex-start;
     padding-top: 3em;
