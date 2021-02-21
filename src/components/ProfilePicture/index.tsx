@@ -17,7 +17,7 @@ const ProfilePicture: React.FC = () => {
         <rect
           style={{
             opacity: 1,
-            fill: '#5e22af',
+            fill: '#673AB7',
             fillOpacity: 1,
             stroke: 'none',
             strokeWidth: 2.1797142,
@@ -34,7 +34,7 @@ const ProfilePicture: React.FC = () => {
         <path
           style={{
             opacity: 1,
-            fill: '#1be0d4',
+            fill: '#00BCD4',
             fillOpacity: 1,
             stroke: 'none',
             strokeWidth: 1.90488601,
