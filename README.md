@@ -6,5 +6,5 @@ Para acessar, entre em **[guilhermebalog.ga](https://guilhermebalog.ga)**
 
 Ou, leia o QR Code com seu celular:
 
-<img style="display: block; width: 50%; margin: 0 auto" src="public/qr-code.svg">
+<img style="display: block; width: 200px; margin: 0 auto" src="public/qr-code.svg">
 <!-- ![QR Code https://guilhermebalog.ga](public/qr-code.svg) -->
