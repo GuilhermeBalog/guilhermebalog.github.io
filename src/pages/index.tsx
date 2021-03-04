@@ -122,20 +122,6 @@ function App() {
       </section>
 
       <section>
-        <h3>Experiência profissional</h3>
-        {workExperience.map((work, i) => (
-          <Work work={work} key={i} />
-        ))}
-      </section>
-
-      <section>
-        <h3>Formação</h3>
-        {education.map((formation, i) => (
-          <Education formation={formation} key={i} />
-        ))}
-      </section>
-
-      <section>
         <h3>Projetos web</h3>
         <p>
           Esses projetos são páginas estáticas, usando APIs de terceiros, alguns
@@ -170,6 +156,20 @@ function App() {
             />
           ))}
         </div>
+      </section>
+
+      <section>
+        <h3>Experiência profissional</h3>
+        {workExperience.map((work, i) => (
+          <Work work={work} key={i} />
+        ))}
+      </section>
+
+      <section>
+        <h3>Formação</h3>
+        {education.map((formation, i) => (
+          <Education formation={formation} key={i} />
+        ))}
       </section>
     </div>
   );
