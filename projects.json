@@ -2,7 +2,7 @@
   "web": [
     {
       "name": "Jogo da Velha",
-      "description": "Minha implementação do clássico Jogo da Velha, usando a tríade da web",
+      "description": "Minha implementação do clássico Jogo da Velha, usando a tríade da web.",
       "languages": "JavaScript, HTML, CSS",
       "homepage": "https://guilhermebalog.ga/tic-tac-toe",
       "repo_url": "https://github.com/GuilhermeBalog/tic-tac-toe",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Genius",
-      "description": "Versão digital do brinquedo Genius, utilizando a biblioteca Tone.js para tocar os sons",
+      "description": "Versão digital do brinquedo Genius, utilizando a biblioteca Tone.js para tocar os sons.",
       "languages": "JavaScript, Tone.js, HTML, CSS",
       "homepage": "https://guilhermebalog.ga/genius",
       "repo_url": "https://github.com/GuilhermeBalog/genius",
@@ -33,12 +33,12 @@
       "image": "/js-music-keyboard.png"
     },
     {
-      "name": "To Do List",
-      "description": "Uma aplicação de To-do list feito com JavaScript puro, salvando no local storage.",
+      "name": "Task List",
+      "description": "Uma aplicação de lista de tarefas feita com JavaScript puro, salvando no local storage.",
       "languages": "JavaScript, HTML, CSS",
-      "homepage": "https://guilhermebalog.ga/TodoList",
-      "repo_url": "https://github.com/GuilhermeBalog/TodoList",
-      "image": "/todolist.png"
+      "homepage": "https://guilhermebalog.ga/task-list",
+      "repo_url": "https://github.com/GuilhermeBalog/task-list",
+      "image": "https://repository-images.githubusercontent.com/192801585/de3f8400-8504-11eb-8ed6-ad1cddf81ca9"
     },
     {
       "name": "Hello Worlds",
@@ -54,7 +54,7 @@
       "languages": "JavaScript, p5.js, HTML, CSS",
       "homepage": "https://guilhermebalog.ga/imersao-gamedev/",
       "repo_url": "https://github.com/GuilhermeBalog/imersao-gamedev",
-      "image": "/gamedev.png"
+      "image": "https://repository-images.githubusercontent.com/275852683/7f4bca80-8112-11eb-87d0-870d5f6db07e"
     }
   ],
   "node": [
@@ -76,7 +76,7 @@
     },
     {
       "name": "Gerador de Portfólio",
-      "description": "Gere uma portfólio (parecido com este site) a partir do seu perfil do GitHub. Projeto feito com ReactJS, consumindo a API do GitHub",
+      "description": "Gere uma portfólio (parecido com este site) a partir do seu perfil do GitHub. Projeto feito com ReactJS, consumindo a API do GitHub.",
       "languages": "Node.js, ReactJS",
       "homepage": "https://guilhermebalog.ga/portfolio-generator/",
       "repo_url": "https://github.com/GuilhermeBalog/portfolio-generator",
@@ -92,11 +92,19 @@
     },
     {
       "name": "Mother Weather",
-      "description": "Previsão do tempo de uma forma divertida, uma mãe diria. Meu primeiro projeto usando TypeScript e a previsão do tempo é feita com a API do Meteorologisk institutt",
+      "description": "Previsão do tempo de uma forma divertida, uma mãe diria. Meu primeiro projeto usando TypeScript e a previsão do tempo é feita com a API do Meteorologisk institutt.",
       "languages": "ReactJS, Typescript",
       "homepage": "https://guilhermebalog.ga/mother-weather/",
       "repo_url": "https://github.com/GuilhermeBalog/mother-weather",
       "image": "/mother-weather.png"
+    },
+    {
+      "name": "Be the Hero",
+      "description": "Conecta ONGs que precisam de ajuda e heróis para ajudá-las. Mais um projeto fullstack, com API, frontend para as ONGs e app mobile para quem quiser ajudar.",
+      "languages": "Node.js, ReactJS, React Native",
+      "homepage": "http://be-the-hero.surge.sh/",
+      "repo_url": "https://github.com/GuilhermeBalog/be-the-hero",
+      "image": "https://repository-images.githubusercontent.com/250404540/34b6bd80-8519-11eb-81b2-426bb86fc46c"
     }
   ]
 }
