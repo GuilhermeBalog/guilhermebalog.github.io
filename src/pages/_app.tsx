@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import '../styles/index.css';
+import { GlobalStyle } from '../styles/global';
 
 const title = 'Guilherme Balog Gardino | Desenvolvedor de software';
 const description =
@@ -46,6 +46,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
       </Head>
+      <GlobalStyle />
       <Component {...pageProps} />
     </>
   );
