@@ -27,6 +27,7 @@ const ProjectCard: React.FC<Props> = ({ project, iconColor }) => {
           src={project.image}
           alt={project.name}
           className={styles.projectImage}
+          loading="lazy"
         />
         <h4>{project.name}</h4>
       </a>
