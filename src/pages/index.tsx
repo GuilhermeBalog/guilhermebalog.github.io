@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { FaLinkedin, FaGithub, FaMoon, FaRegMoon } from 'react-icons/fa';
 
 import projects from '../../public/projects.json';
@@ -10,62 +10,20 @@ import SafeLink from '../components/SafeLink';
 import Education from '../components/Education';
 import Work from '../components/Work';
 import ProfilePicture from '../components/ProfilePicture';
+import { Header } from '../styles/Header';
+import { Section } from '../styles/Section';
+import { Projects } from '../styles/Projects';
+import { ThemeSwitchContext } from '../contexts/ThemeSwitchContext';
+import { Main } from '../styles/Main';
+import { ThemeContext } from 'styled-components';
 
-function App() {
-  const defaultTheme = {
-    bg: '#f9f9f9',
-    bgLighter: '#ffffff',
-    borderColor: '#00000040',
-    colorText: '#000000'
-  };
-
-  const darkTheme = {
-    bg: '#212121',
-    bgLighter: '#333333',
-    borderColor: '#ffffff40',
-    colorText: '#ffffff'
-  };
-
-  function store(key: string, item: object | boolean) {
-    localStorage.setItem(`@guilhermebalog/${key}`, JSON.stringify(item));
-  }
-
-  function getFromStorage(key: string) {
-    return JSON.parse(localStorage.getItem(`@guilhermebalog/${key}`));
-  }
-
-  const [theme, setTheme] = useState(defaultTheme);
-  const [isDarkThemeChecked, setIsDarkThemeChecked] = useState(false);
-
-  useEffect(() => {
-    const storedTheme = getFromStorage('theme');
-    if (storedTheme) {
-      setTheme(storedTheme);
-    }
-
-    const storedChecked = getFromStorage('checked');
-    if (storedChecked) {
-      setIsDarkThemeChecked(storedChecked);
-    }
-  }, []);
-
-  useEffect(() => {
-    store('theme', theme);
-
-    Object.entries(theme).forEach(([key, value]) => {
-      document.body.style.setProperty(transformKey(key), value);
-    });
-
-    function transformKey(key: string) {
-      return '--' + key.replace(/([A-Z])/g, '-$1').toLowerCase();
-    }
-  }, [theme]);
-
-  useEffect(() => store('checked', isDarkThemeChecked), [isDarkThemeChecked]);
+function Home() {
+  const { toggleTheme } = useContext(ThemeSwitchContext);
+  const theme = useContext(ThemeContext);
 
   return (
-    <div id="App">
-      <header>
+    <Main>
+      <Header>
         <ProfilePicture />
 
         <div className="title">
@@ -75,14 +33,14 @@ function App() {
           <div className="social-links">
             <div className="social-media">
               <SafeLink href="https://www.linkedin.com/in/guilhermebalog/">
-                <FaLinkedin size="25" color={theme.colorText} />
+                <FaLinkedin size="25" color={theme.colors.text} />
                 <span>LinkedIn</span>
               </SafeLink>
             </div>
 
             <div className="social-media">
               <SafeLink href="https://github.com/GuilhermeBalog">
-                <FaGithub size="25" color={theme.colorText} />
+                <FaGithub size="25" color={theme.colors.text} />
                 <span>Github</span>
               </SafeLink>
             </div>
@@ -93,24 +51,21 @@ function App() {
           <input
             type="checkbox"
             id="theme"
-            checked={isDarkThemeChecked}
-            onChange={() => {
-              isDarkThemeChecked ? setTheme(defaultTheme) : setTheme(darkTheme);
-              setIsDarkThemeChecked(!isDarkThemeChecked);
-            }}
+            checked={theme.title == 'dark'}
+            onChange={toggleTheme}
           />
 
           <label htmlFor="theme">
-            {isDarkThemeChecked ? (
-              <FaMoon size="35" color={theme.colorText} />
+            {theme.title == 'light' ? (
+              <FaRegMoon size="35" color={theme.colors.text} />
             ) : (
-              <FaRegMoon size="35" color={theme.colorText} />
+              <FaMoon size="35" color={theme.colors.text} />
             )}
           </label>
         </div>
-      </header>
+      </Header>
 
-      <section>
+      <Section>
         <h3>Sobre mim</h3>
         <p>
           Olá! Meu nome é <strong>Guilherme Balog Gardino</strong> e sou
@@ -119,27 +74,23 @@ function App() {
           React.js, mas gosto muito de experimentar diferentes ferramentas e
           linguagens e com elas construir projetos inusitados.
         </p>
-      </section>
+      </Section>
 
-      <section>
+      <Section>
         <h3>Projetos web</h3>
         <p>
           Esses projetos são páginas estáticas, usando APIs de terceiros, alguns
           frameworks e um pouco de JavaScript puro também
         </p>
 
-        <div className="projects">
+        <Projects>
           {projects.web.map(project => (
-            <ProjectCard
-              key={project.name}
-              project={project}
-              iconColor={theme.colorText}
-            />
+            <ProjectCard key={project.name} project={project} />
           ))}
-        </div>
-      </section>
+        </Projects>
+      </Section>
 
-      <section>
+      <Section>
         <h3>Projetos Node</h3>
         <p>
           Estes projetos são um pouco mais complexos, usando Node.js, React e
@@ -147,32 +98,28 @@ function App() {
           forma <i>open source</i>.
         </p>
 
-        <div className="projects">
+        <Projects>
           {projects.node.map(project => (
-            <ProjectCard
-              key={project.name}
-              project={project}
-              iconColor={theme.colorText}
-            />
+            <ProjectCard key={project.name} project={project} />
           ))}
-        </div>
-      </section>
+        </Projects>
+      </Section>
 
-      <section>
+      <Section>
         <h3>Experiência profissional</h3>
         {workExperience.map((work, i) => (
           <Work work={work} key={i} />
         ))}
-      </section>
+      </Section>
 
-      <section>
+      <Section>
         <h3>Formação</h3>
         {education.map((formation, i) => (
           <Education formation={formation} key={i} />
         ))}
-      </section>
-    </div>
+      </Section>
+    </Main>
   );
 }
 
-export default App;
+export default Home;
