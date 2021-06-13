@@ -1,5 +1,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { ThemeSwitchProvider } from '../contexts/ThemeSwitchContext';
+import { App } from '../styles/App';
 
 import { GlobalStyle } from '../styles/global';
 
@@ -10,7 +12,7 @@ const image = 'https://avatars0.githubusercontent.com/u/38947601?v=4';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeSwitchProvider>
       <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
@@ -46,8 +48,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
       </Head>
+
       <GlobalStyle />
-      <Component {...pageProps} />
-    </>
+
+      <App>
+        <Component {...pageProps} />
+      </App>
+    </ThemeSwitchProvider>
   );
 }
