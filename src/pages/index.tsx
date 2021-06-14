@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FaLinkedin, FaGithub, FaMoon, FaRegMoon } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMoon, FaRegMoon, FaSun } from 'react-icons/fa';
 
 import projects from '../../public/projects.json';
 import education from '../../public/education.json';
@@ -59,7 +59,7 @@ function Home() {
             {theme.title == 'light' ? (
               <FaRegMoon size="35" color={theme.colors.text} />
             ) : (
-              <FaMoon size="35" color={theme.colors.text} />
+              <FaSun size="35" color={theme.colors.text} />
             )}
           </label>
         </div>
